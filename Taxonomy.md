@@ -1,3 +1,5 @@
+
+
 | Category | Definition | Example |
 | :--- | :--- | :--- |
 | **Ambiguity** | Requirement has multiple plausible interpretations. | "Chambers shall be kept at a safe temperature." (What temperature is safe?) |
@@ -50,6 +52,22 @@
 | **D15** | S10 vs S4 | Contradiction | S10 restricts a depositor to 20% withdrawal per year, but S5 allows vault authority to release boxes without depositor limits during emergencies. | S5 & S10 | Medium | Clarify that emergency releases override annual quota limits. | Open |
 
 
+## Question 4
 
+## Peer Review Simulation & Detection Rate Calculation
 
+- **My Defects Found:** 15 defects ($D_A = 15$)
+- **Classmate's Unique Defects Found:** 4 defects ($D_B = 4$)
+- **Union of Defects ($D_{union}$):** $15 + 3 \text{ (overlapping)} + 1 \text{ (unique by peer)} = 19$
+- **Detection Rate Calculation:**
+  $$\text{Detection Rate} = \frac{\text{My Defects Found}}{\text{Union of Defects}} = \frac{15}{19} \approx 78.9\%$$
 
+## Question 5
+Ambiguity        [████████████████████] 3
+Vagueness        [████████████████████] 3
+Incompleteness   [████████████████████] 3
+Contradiction    [████████████████████] 3
+Non-Verifiab.    [████████] 1
+Redundancy       [████████] 1
+Infeasibility    [████████] 1
+Untraceability   [ ] 0
